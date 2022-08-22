@@ -22,3 +22,6 @@ Profesor: Ing. Ezequiel Giovanardi - ggiovanardi@iua.edu.ar
 
 Cuando se conectan 2 dispositivos de la misma capa, se utilizan cables de normas inversas aka cable cruzado. (Uno manda y el otro recibe)
 Mientras que si conectamos 2 dispositivos de distinta capa, por ejemplo un switch y una pc, podemos usar un cable directo (misma norma).
+
+> **Misma** capa $\rightarrow$ cable cruzado
+> **Distinta** capa $\rightarrow$ cable directo
