@@ -83,3 +83,28 @@ Con `android:gravity` podemos setear movimiento en el otro eje.
 Importante que tenga **SOLO** un hijo. Esto quiere decir que si queremos meter mas hijos, deberemos encapsularlos en un layout y que dicho layout sea el hijo del ScrollView.
 
 Solo soporta el scrolling vertical. Para scrollear de manera horizontal, usamos $\rightarrow$ **HorizontalScrollView**.
+
+# [26-ago]
+
+## Coordinator Layout
+
+Para identificar los distintos componentes le seteo el siguiente atributo . El `+` significa que lo estoy creando.
+
+---
+
+# Lista de propiedades para los distintos componentes [Actualizable]
+
+- `android:background` define el fondo del componente, y puede ser un color o un drawable (para poner una imagen).
+- `android:onClick` permite asociar un metodo para el tap $\rightarrow$ handleTap
+- `android:visibility` visible, invisible o gone. Gone $\rightarrow$ invisible pero sin ocupar espacio. Mientras que invisible si ocupa el espacio pero no se ve.
+- `android:id="@+id/<my_id>"` sirve para identificar los distintos componentes le seteo el siguiente atributo . El `+` significa que lo estoy creando.
+- `android:gravity` podemos setear movimiento en el otro eje al que trabaja el componente. Solo disponible en LinearLayout
+- `android:weightSum` seteamos el peso total que va a tener un layout.
+  - Tambien podemos setear la importancia que tienen los campos individuales con el atributo `android:layout_weight`
+
+Valores para los atributos de una View:
+$\rightarrow$ `match_parent` el componente tendra la misma medida que la view padre.
+$\rightarrow$ `wrap_content` el componente tendra la medida de su propio contenido.
+$\rightarrow$ `medida fija` el componente tendra una medida especifica, y su valor se expresa en **dp** y no en pixeles.
+
+## Listeners
