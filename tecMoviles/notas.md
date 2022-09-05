@@ -107,4 +107,57 @@ $\rightarrow$ `match_parent` el componente tendra la misma medida que la view pa
 $\rightarrow$ `wrap_content` el componente tendra la medida de su propio contenido.
 $\rightarrow$ `medida fija` el componente tendra una medida especifica, y su valor se expresa en **dp** y no en pixeles.
 
+# Clase [1-sep]
+
 ## Listeners
+
+Para poder trabajar con una view desde el codigo debemos realizar estos pasos:
+
+Declarar la view dentro de la activity, por ejemplo un boton
+
+```kotlin
+// Aca hay 2 declaraciones distintas, pero hay que usar solo una
+val initButton : Button = init_button
+lateinit var initButton: Button
+```
+
+Utilizar el metodo findViewById(<Id de la view>) y asociar la variable declarada:
+
+```kotlin
+initButton = findViewById(R.id.init_button);
+```
+
+Setear un ClickListener para responder cuando se presiona
+
+```kotlin
+initButton.setOnClickListener {
+  // Respuesta del evento aqui
+  it.visibility = View.GONE
+}
+```
+
+De forma actualizada, se usan los **ViewBinding**. Para esto hay que primero habilitar la opcion en el archivo `build.gradle`.
+
+```kotlin
+viewBinding {
+  enabled = true
+}
+```
+
+Con esto evitas el findViewById.
+
+```kotlin
+// Este es el contenido de una activity
+private lateinit var binding: ActivitySplashBinding
+
+override fun onCreate (savedInstanceState: Bundle?) {
+  super.onCreate(savedInstanceState)
+  binding = ActivitySplashBinding.inflate(layoutInflater)
+  val view = binding.root
+  setContentView(view)
+
+  binding.navigateToList.setOnClickListener {
+    // Tu accion aca
+  }
+}
+```
