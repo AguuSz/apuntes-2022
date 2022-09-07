@@ -60,3 +60,32 @@ Se utilizan diagramas de **tiempo**, de **secuencia**.
 - De secuencia
 - De estados
 - De actividades
+
+# [31-ago]
+
+Para disenar previamente hay que pensar y tomar decisiones.
+Disenar se basa en **pensar la mejor solucion** para resolver un problema en cuestion. Consiste en considerar el negocio del software que estamos haciendo, y pensar que modelos nos van a aportar informacion y faciliten el coding.
+
+Podemos disenar orientado a objetos por ejemplo. Este metodo, nos pondra a pensar en el conjunto de objetos que vamos a tener en el coding. Nos permite tener una traza directa con estos y se hace mas facil de entender para los programadores. Nos permite ver que hacen estos componentes y como se relacionan.
+
+## Trabajar de manera iterativa
+
+Nos permite no tener que tomar todas las decisiones enseguida, debido a que las podemos ir postergando a momentos mas oportunos. Esto es de suma utilidad cuando no tengo toda la informacion, o cuando los requerimientos cambian.
+Este modo tambien esta bueno, porque el codear no es lo dificil, sino que es el problema es que es dificil.
+
+## Proceso del diseno
+
+Consiste en encontrar componentes en base a los requerimientos del sistema. Luego, se definen los componentes $\rightarrow$ esto va de la mano con encontrar los diagramas de como identificarlos, ya sea con diagramas de clases, objetos, etc.
+
+## Responsabilidades de las tareas
+
+Suelen decir:
+
+- Costo
+- Completitud
+- % de completittud
+- Tiempo
+
+## Particularidades
+
+Existen algunos componentes, que una vez diagramados como objetos, los consideraremos como interfaz. Esto quiere decir, que los objetos que marquemos como interfaz son objetos los cuales no tienen comportamiento. Si bien pueden hacer algunas acciones, no tienen ningun tipo de validacion.
